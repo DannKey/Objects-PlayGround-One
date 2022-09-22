@@ -1,0 +1,170 @@
+let company = {
+    name: 'Lisam Systems',
+    location: 'Belgium',
+    city: 'Brussels',
+    departments: ['it', 'sales', 'marketing'],
+    employees: {
+        it: {
+            name: 'John',
+            age: 25,
+            salary: 1000,
+            position: 'developer'
+        },
+        sales: {
+            name: 'Peter',
+            age: 30,
+            salary: 2000,
+            position: 'sales manager'
+        },
+        marketing: {
+            name: 'Mary',
+            age: 28,
+            salary: 1500,
+            position: 'marketing manager'
+        },
+
+    },
+    partners: ['Microsoft', 'WikiChemia', 'Google'],
+    expertise: ['Chemistry', 'Physics', 'Mathematics', 'IT'],
+
+Branches: {
+
+    officeOne: {
+        name: 'Office Bulgaria',
+        location: 'Bulgaria',
+        city: 'Ruse',
+        departments: ['validation', 'it', 'marketing', 'indexing'],
+        employees: {
+            validation: {
+                name: 'Ivan',
+                age: 25,
+                salary: 1000,
+                position: 'validator'
+        },
+            it: {
+                name: 'Georgi',
+                age: 25,
+                salary: 1000,
+                position: 'developer'
+        }, 
+            marketing: {
+                name: 'Maria',
+                age: 28,
+                salary: 1500,
+                position: 'marketing manager'
+        },
+            indexing: {
+                name: 'Petar',
+                age: 28,
+                salary: 1500,
+                position: 'indexer'
+        },
+        },
+        partners: ['Microsoft', 'WikiChemia', 'Google'],
+        expertise: ['Chemiistry', 'Validating', 'Indexing', 'IT'],
+    },
+
+    officeTwo: {
+        name: 'Office Germany',
+        location: 'Germany',
+        city: 'Berlin',
+        departments: ['it', 'sales', 'marketing'],
+        employees: {
+            it: {
+                name: 'Hanz',
+                age: 25,
+                salary: 1000,
+                position: 'developer'              
+        },
+            sales: {
+                name: 'Klaus',
+                age: 30,
+                salary: 2000,
+                position: 'sales manager'
+        },
+            marketing: {
+                name: 'Karl',
+                age: 28,
+                salary: 1500,
+                position: 'marketing manager'
+        },
+        },
+        partners: ['Microsoft', 'WikiChemia', 'Google'],
+        expertise: ['Chemistry', 'Physics', 'Mathematics', 'IT'],
+    },
+
+    officeThree: {
+        name: 'Office France',
+        location: 'France',
+        city: 'Paris',
+        departments: ['it', 'sales', 'marketing'],
+        employees: {
+            it: {
+                name: 'Pierre',
+                age: 25,
+                salary: 1000,
+                position: 'developer'
+        },
+            sales: {
+                name: 'Jean',
+                age: 30,
+                salary: 2000,
+                position: 'sales manager'
+        },
+            marketing: {
+                name: 'Jacques',
+                age: 28,
+                salary: 1500,
+                position: 'marketing manager'
+        },
+        },
+        partners: ['Microsoft', 'WikiChemia', 'Google'],
+        expertise: ['Chemistry', 'Physics', 'Mathematics', 'IT'],
+    },
+
+    officeFour: {
+        name: 'Office Spain',
+        location: 'Spain',
+        city: 'Madrid',
+        departments: ['it', 'sales', 'marketing'],
+        employees: {
+            it: {
+                name: 'Juan',
+                age: 25,
+                salary: 1000,
+                position: 'developer'
+        },
+            sales: {
+                name: 'Pedro',
+                age: 30,
+                salary: 2000,
+                position: 'sales manager'
+        },
+            marketing: {
+                name: 'Jose',
+                age: 28,
+                salary: 1500,
+                position: 'marketing manager'
+        },
+        },
+        partners: ['Microsoft', 'WikiChemia', 'Google'],
+        expertise: ['Chemistry', 'Physics', 'Mathematics', 'IT'],
+    },
+
+   }
+
+};
+
+
+
+function salaryRaise(officeOne, department, raise) {
+  let money =  company.Branches[officeOne].employees[department].salary += raise;
+console.log(money);
+}
+salaryRaise('officeOne', 'validation', 500);
+
+console.log(company.Branches.officeOne.employees.validation.salary);
+
+
+
+
